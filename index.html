@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>asma fadilah</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- my style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- sweetalert -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.min.css" rel="stylesheet">
+
+  <!-- aos animasi -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="loader-wrapper">
+      <div class="loader-container">
+        <div class="loader">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div><div class="loader-container">
+        <div class="loader">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top"> 
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">Portfolio.</a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Portfolio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Fitur Star -->
+      </div>
+    </nav>
+
+  <!-- hero -->
+  <section style="background: linear-gradient(to top, #ffffff 0%, #c3cfe2 30%, #ffffff 100%);">
+    <div class="container" id="hero">
+      <div class="hero-row row flex-lg-row-reverse d-flex align-items-center">
+        <div class="foto col-sm-12 col-lg-6" data-aos="zoom-in" data-aos-delay="1000">
+          <span class="blob">
+              <path fill="#000000"
+                d="M40.4,-49.4C53.9,-45.7,67.5,-36.1,67.7,-24.6C67.8,-13.1,54.4,0.1,50.5,17.8C46.6,35.4,52.3,57.5,45.4,62.1C38.6,66.7,19.3,53.7,0.7,52.7C-17.8,51.7,-35.6,62.6,-45.5,59C-55.3,55.4,-57.2,37.3,-59.7,21.3C-62.1,5.4,-65.2,-8.4,-58.3,-15.6C-51.3,-22.7,-34.3,-23.2,-22.9,-27.5C-11.5,-31.9,-5.7,-40,3.8,-45.3C13.4,-50.6,26.8,-53,40.4,-49.4Z"
+                transform="translate(100 100)" />
+            </svg>
+          </span>
+          <img src="img/ABOUTME2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="600"
+            loading="lazy">
+        </div>
+        <div class="hero-col col-lg-6">
+          <div class="hero-text">
+            <p class="hero-greetings" data-aos="fade-down"  data-aos-delay="1000">HELLO EVERYONE! 👋</p>
+            <h2 class="hero-nama" data-aos="fade-down"  data-aos-delay="1050">Asma Fadilah Azzahra</h2>
+            <p class="hero-job text-secondary" data-aos="fade-down"  data-aos-delay="1100">Character Desain & Animate</p>
+          </div>
+          <div class="hero-button" data-aos="fade-down"  data-aos-delay="1150">
+            <a href="https://wa.me/+62895326800372" class="btn btn-dark px-4 py-2" target="_blank">Hubungi saya</a>
+            <a href="#projects" class="hero-portofolio btn border-dark px-4 py-2 ms-2">Lihat Portofolio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section class="container" id="about" data-aos="fade-down">
+    <h2 class="text-center about-title">About Me</h2>
+    <div class="about-row row mt-5">
+      <div class="about-col col-sm-12 col-md-12 col-lg-5 col-xl-5">
+        <img src="img/hero1.png" class="img-about img-thumbnail" width="400px" alt="">
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-4">
+        <h2 class="about-h2" style="font-family: Montserrat;">Who Am I</h2>
+        <p class="about-p fs-5 mt-3" style="font-family: Georgia, 'Times New Roman', Times, serif;">Saya merupakan seorang illustrator 2D, saya
+          sudah berkecimpung dibidang ini selama 3
+          tahun hingga saat ini. Saya berkomitmen
+          untuk mengubah ide menjadi visual yang
+          menakjubkan
+        </p>
+        <hr class="about-hr my-4">
+        <div class="row">
+          <div class="row-col col-sm-12 col-lg-6">
+            <p class="mb-1"><b>Nama</b> Asma Fadilah Azzahra</p>
+            <p class="row-p"><b>Umur</b> 19 Tahun</p>
+          </div>
+          <div class="row-col col-sm-12 col-lg-6">
+            <p class="mb-1"><b>Asal</b> Kota Bandung,Jawa barat</p>
+            <p><b>Email</b> 4sm4123@gmail.com</p>
+          </div>
+        </div> 
+        <div class="about-a">
+          <a class="btn btn-dark mt-2 px-4 py-2" onclick="PrintPDF()" target="_blank">My Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section class="container" id="projects" data-aos="fade-down">
+    <h2 class="text-center projects-title">My Projects</h2>
+    <!-- card -->
+    <div class="projek-card row mt-5" style="padding-left: 7.5rem; padding-right: 7.5rem;">
+      <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4" data-aos="flip-left">
+        <div class="card" style="width: 20rem;">
+          <img src="img/projek1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="mb-2">
+              <span class="badge rounded-pill text-bg-secondary">Paint Tool Sai</span>
+            </div>
+            <p class="card-text"></p>
+            <div class="pt-2">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4" data-aos="flip-left">
+        <div class="card" style="width: 20rem;">
+          <img src="img/project2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div class="mb-2">
+              <span class="badge rounded-pill text-bg-secondary">Paint Tool Sai</span>
+            </div>
+            <div class="pt-2">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4" data-aos="flip-left">
+        <div class="card" style="width: 20rem;">
+          <img src="img/project3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="mb-2">
+              <span class="badge rounded-pill text-bg-secondary">Paint Tool Sai</span>
+            </div>
+            <div class="pt-2">   
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hidden projek -->
+    <div id="collapseExample" class="collapse">
+      <div class="projek-card hidden row" style="padding-left: 7.5rem; padding-right: 7.5rem;">
+        <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/project4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge rounded-pill text-bg-secondary">Paint Tool Sai</span>
+              </div>
+              <div class="pt-2">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/project5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge rounded-pill text-bg-secondary">Paint Tool Sai</span>
+              </div>
+              <div class="pt-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projek-col col-sm-12 col-md-12 col-lg-6 col-xl-4">
+          <div class="card" style="width: 20rem;">
+            <img src="img/project6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="mb-2">
+                <span class="badge rounded-pill text-bg-secondary">Paint Tool Sai</span>
+              </div>
+              <div class="pt-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projek-button text-center mt-5">
+        <button class="btn btn-dark px-4 py-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View all projects <i class="bi bi-arrow-right-circle"></i>
+        </button>
+    </div>
+    
+</div>
+</section>
+
+  <!-- skills -->
+  <section id="skills" class="py-5" data-aos="fade-down">
+    <div class="container">
+      <h2 class="text-center mb-5 skills-title">My Skills</h2>
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="">
+              <i class=""></i>
+            </div>
+            <h5 class="skill-name">Paint Tool Saint</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="">
+              <i class=""></i>
+            </div>
+            <h5 class="skill-name">Clip Studio Paint</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-card">
+            <div class="">
+              <i class=""></i>
+            </div>
+            <h5 class="skill-name">Adobe Animate</h5>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" data-aos="fade-down">
+    <div class="container">
+      <h2 class="text-center mb-5 contact-title">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-9 col-lg-6">
+          <div class="card card-contact py-5 px-5">
+            <form action="https://formspree.io/f/mwpeorap" method="POST">
+              <div class="mb-3">
+                <label for="">Nama</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="">Email</label>
+                <input type="email" class="form-control" id="exampleInputNama1">
+              </div>
+              <div class="mb-3">
+                <label for="">Pesan</label>
+                <textarea name="pesan" id="pesan" class="form-control"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-dark px-3">Kirim Pesan</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="info" style="padding-top: 30px;">
+      <div class="footer text-center mb-2">
+        <a href="https://www.instagram.com/faz.artss/?locale=ne_NP" target="_blank" class="bi bi-instagram mx-1" style="color: #FD1D1D;"></a>
+      </div>
+      <p class="footer-p text-center bi bi-c-circle"> made by Ahmad fajri <b
+        class="text-primary"></b></p>
+    </div>
+  </footer>
+
+  <!-- aos animasi -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+    });
+  </script>
+
+  <!-- firebase database -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js"></script>
+
+  <!-- firebase database -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+    import { getFirestore, doc, getDoc, updateDoc, increment, collection, query, where, getDocs, setDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+    import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
+    
+    const firebaseConfig = {
+        apiKey: "AIzaSyBfTPjZybxTJ1Hp72U4ru0QpRYuTlv0Jqg",
+        authDomain: "fitur-like-portofolio.firebaseapp.com",
+        databaseURL: "https://fitur-like-portofolio-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "fitur-like-portofolio",
+        storageBucket: "fitur-like-portofolio.appspot.com",
+        messagingSenderId: "352307667051",
+        appId: "1:352307667051:web:600b73767fa356aaab512e"
+    };
+    
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    const likeButton = document.getElementById('like-button');
+    const likeCount = document.getElementById('like-count');
+    
+    const postId = 'portofolio-likes';
+    const postRef = doc(db, 'posts', postId);
+
+    async function updateLikeCount(user) {
+        try {
+            console.log("Attempting to update like count...");
+            const docSnap = await getDoc(postRef);
+
+            if (docSnap.exists()) {
+                // Cek apakah pengguna sudah memberikan like
+                const likesRef = collection(postRef, 'likes');
+                const userLikeQuery = query(likesRef, where('userId', '==', user.uid));
+                const userLikeSnap = await getDocs(userLikeQuery);
+
+                if (!userLikeSnap.empty) {
+                    console.log("User has already liked this post. Removing like...");
+                    
+                    // Hapus like
+                    await updateDoc(postRef, {
+                        likes: increment(-1)
+                    });
+
+                    // Hapus informasi pengguna yang memberikan like
+                    await deleteDoc(doc(likesRef, user.uid));
+
+                    // Ubah ikon tombol menjadi bi-star
+                    likeButton.classList.remove('bi-star-fill');
+                    likeButton.classList.add('bi-star');
+
+                } else {
+                    console.log("User has not liked this post. Adding like...");
+                    
+                    // Tambahkan jumlah like
+                    await updateDoc(postRef, {
+                        likes: increment(1)
+                    });
+
+                    // Simpan informasi pengguna yang memberikan like
+                    await setDoc(doc(likesRef, user.uid), {
+                        userId: user.uid,
+                        timestamp: new Date()
+                    });
+
+                    // Ubah ikon tombol menjadi bi-star-fill
+                    likeButton.classList.remove('bi-star');
+                    likeButton.classList.add('bi-star-fill');
+                }
+
+                // Menampilkan jumlah like yang diperbarui
+                const updatedDocSnap = await getDoc(postRef);
+                const updatedData = updatedDocSnap.data();
+                likeCount.textContent = `Star ${updatedData.likes}`;
+                
+            } else {
+                console.log("Dokumen tidak ditemukan!");
+            }
+        } catch (error) {
+            console.error("Error saat memperbarui jumlah like: ", error);
+        }
+    }
+
+    async function initializeLikeCount() {
+        try {
+            console.log("Initializing like count...");
+            const docSnap = await getDoc(postRef);
+
+            if (docSnap.exists()) {
+                const data = docSnap.data();
+                likeCount.textContent = `Star ${data.likes || 0}`;
+            } else {
+                console.log("Dokumen tidak ditemukan saat inisialisasi!");
+            }
+        } catch (error) {
+            console.error("Error saat mengambil jumlah like: ", error);
+        }
+    }
+
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            likeButton.addEventListener('click', () => updateLikeCount(user));
+        } else {
+            signInAnonymously(auth)
+                .then(() => {
+                    console.log("Signed in anonymously");
+                })
+                .catch((error) => {
+                    console.error("Error signing in anonymously: ", error);
+                });
+        }
+    });
+
+    initializeLikeCount();
+</script>
+
+
+  <!-- myjs -->
+  <script src="script.js"></script>
+  <!-- sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.all.min.js"></script>
+
+  <script type="text/JavaScript">
+  </script>
+  <!-- Print PDF -->
+  <script>
+    function PrintPDF() {
+      window.open('file/MyResume.pdf');
+    }
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
